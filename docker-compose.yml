@@ -1,0 +1,8 @@
+services:
+  web:
+    build: .
+    image: sam-paint-glass:latest
+    container_name: sam-paint-glass
+    ports:
+      - "8080:80"        # open http://localhost:8080
+    restart: unless-stopped
