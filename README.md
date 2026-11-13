@@ -22,11 +22,11 @@ Copy this folder to the server, then run `docker compose up --build -d`.
 Change `8080:80` to `80:80` in `docker-compose.yml` to serve on port 80,
 and put a TLS proxy (Caddy, Traefik or Cloudflare) in front for HTTPS.
 
-## Deploy with GitHub Pages
+## Deploy with Vercel
 
-The GitHub Actions workflow publishes the static site from `site/` to GitHub
-Pages whenever a commit is pushed to `main`. After the first successful run,
-the site is available at `https://bevanardin061-source.github.io/sam-paint-glass/`.
+The Vercel project deploys the static site from `site/` whenever a commit is
+pushed to `main`. The public site is available at
+`https://sam-paint-glass.vercel.app/`.
 
 ## Editing
 
